@@ -25,6 +25,11 @@ export class InicioPage implements OnInit {
     name: 'Alert',
     redirectTo: '/alert'
     },
+    {
+      icon: 'body-outline',
+      name: 'Avatar y Button',
+      redirectTo: '/avatar'
+      },
     ];
 
   constructor() { }
