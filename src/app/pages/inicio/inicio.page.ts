@@ -30,7 +30,13 @@ export class InicioPage implements OnInit {
       name: 'Avatar y Button',
       redirectTo: '/avatar'
       },
+    {
+      icon: 'airplane-outline',
+      name: 'Input',
+      redirectTo: '/input'
+      },
     ];
+
 
   constructor() { }
 

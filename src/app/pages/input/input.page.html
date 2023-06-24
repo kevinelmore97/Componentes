@@ -1,0 +1,43 @@
+<app-header titulo="Input"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-input label="Nombre" placeholder="Ingrese su nombre" [clearInput]="true" ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Apellidos" placeholder="Ingrese sus apellidos" [clearInput]="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Edad" type="number" labelPlacement="stacked" placeholder="00"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="Ingrese su usuario" [clearInput]="true">
+          <div slot="label">Usuario<ion-text color="danger">(Requirido)</ion-text></div>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="password" value="password" [clearInput]="true">
+          <div slot="label">Contraseña<ion-text color="danger">(Requirido)</ion-text></div>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Correo" type="email" placeholder="estudiante@gmail.com" [clearInput]="true" label-placement="floating" fill="solid"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Numero telefonico" type="tel" placeholder="090-000-0000" [clearInput]="true" [counter]="true" maxlength="10"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Puesto" value="Estudiante" [disabled]="true"></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-list>
+</ion-content>
